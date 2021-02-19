@@ -1,0 +1,162 @@
+#login-container {
+    background: #262A2B;
+    display: flex;
+}
+
+#login-image {
+    background-image: url("../images/login_image.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    width: 50vw;
+    height: 100vh;
+    min-height: 700px;
+}
+
+/* TODO: Finish setting up layout for smaller screens */
+@media only screen and (max-width: 1000px) {
+    #login-container {
+        flex-direction: column;
+    }
+
+    #login-image {
+        width: 100%;
+    }
+}
+
+#form-contain {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login {
+    background-color: #FFF;
+    padding: 50px;
+    border-radius: 9px;
+    margin: 50px;
+}
+
+#login > h1 {
+    margin-top: 0;
+}
+
+#login-form > input {
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    height: 30px;
+    width: 100%;
+    border: 1px solid #000;
+    font-size: 17px;
+    padding-left: 10px; 
+}
+
+/* #show-pass {
+    position: absolute;
+} */
+
+#login-buttons {
+    display: flex;
+    /* justify-content: center; */
+}
+
+#login-buttons > button {
+    padding: 5px 20px;
+    font-size: 15px;
+    border: none;
+    background-color: #DDD;
+    cursor: pointer;
+}
+
+#login-btn {
+    margin-right: 20px;
+    background-color: #007CB5 !important;
+    color: #FFF;
+}
+
+#login-form > a {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+#login-form > a:hover {
+    color: #000;
+}
+
+/* Dashboard Styling */
+#dashboard-container {
+    background-image: url("../images/gym2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #262A2B;
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    background-color: #f0f0e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 1.2em;
+    font-weight: 520;
+    border-bottom: 4px solid #0475D8;
+}
+
+#nav-links {
+    display: flex;
+    list-style: none;
+    height: 50px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    align-items: center;
+}
+
+#nav-selector {
+    width: 15px;
+    position: absolute;
+    /* Home value - right: 221px */
+    /* Profile value - right: 137px */
+    /* Config value - right: 48px */
+    right: 221px;
+    top: 47px;
+}
+
+#nav-links > li {
+    margin-right: 30px;
+}
+
+#home {
+    color: #0475D8;
+}
+
+#dashboard-info {
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 2000px;
+    /* background-color: #555; */
+    margin: 0 auto;
+}
+
+#info {
+    display: inline-block;
+    background-color: rgba(240, 240, 233, 0.95);
+    width: 450px;
+    height: 350px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#info-chart {
+    width: 90%;
+    padding-top: 70px;
+}
